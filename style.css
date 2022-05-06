@@ -1,0 +1,92 @@
+:root {
+	--color: #f2f2f2;
+	--color-de: #a2a2a2;
+	--theme-color: #e5a00d;
+
+	--background-color: #1a1a1a;
+	--div-background-color: #2c2c2c;
+	--div-background-color-de: #202020;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+html, body {
+	height: 100%;
+	width: 100%;
+}
+
+body {
+	color: var(--color);
+	background-color: var(--background-color);
+	box-sizing: border-box;
+	padding: 30px 50px;
+	font-family: 'Courier New', monospace;
+}
+
+input[type=date] {
+	color: var(--color);
+	background-color: var(--div-background-color);
+	padding: 10px;
+	border: 1px solid var(--theme-color);
+	border-radius: 4px;
+	margin: 8px;
+}
+
+button {
+	background-color: var(--div-background-color);
+	color: var(--color);
+	padding: 8px;
+	min-width: 100px;
+	border:  none;
+	border-radius: 4px;
+	box-shadow: 0 0 10px -2px #000;
+	transition: 0.1s;
+}
+
+button:hover {
+	box-shadow: 0 0 10px 2px #000;
+}
+
+fieldset {
+	border: 1px solid var(--theme-color);
+	padding: 10px;
+	box-sizing: border-box;
+	border-radius: 4px;
+}
+
+fieldset legend {
+	margin-left: 20px;
+	padding: 0 8px;
+}
+
+table {
+	margin-top: 20px;
+	font-size: 20px;
+	border-radius: 6px;
+	background-color: var(--div-background-color);
+}
+
+table td {
+	position: relative;
+	aspect-ratio: 1;
+	padding: 16px;
+	border-radius: 4px;
+	box-sizing: border-box;
+	text-align: center;
+}
+
+table .active {
+	background-color: var(--theme-color);
+	color: var(--background-color);
+}
+
+table .disable {
+	text-decoration: line-through;
+	text-decoration-color: var(--theme-color);
+	text-decoration-thickness:  2px;
+	background-color: var(--div-background-color-de);
+	color: var(--color-de);
+}
