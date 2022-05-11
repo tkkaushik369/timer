@@ -15,6 +15,7 @@
 		<br><br>
 		<a id="time_span">From --:-- to --:--</a>
 		<br>
+		<a id="countup">--:--/--:--</a><br>
 		<a id="countdown">--:--/--:--</a>
 	</fieldset>
 	<center><table id="calender"></table></center>
